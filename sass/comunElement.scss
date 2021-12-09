@@ -1,0 +1,101 @@
+.header {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.container00 {
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.arrowDown {
+  display: inline-block;
+  width: 90px;
+  margin-top: 5px;
+}
+
+.navBarPc {
+  width: 240px;
+  margin-left: -10px;
+  margin-right: 20px;
+}
+
+// Buttons
+#button {
+  padding: 15px 35px;
+  border: 2px solid white;
+}
+
+// Footer site
+.footer {
+  background-color: black;
+  height: 15vh;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      color: $link-hover;
+    }
+  }
+}
+
+.copyOBC {
+  color: $copy-obc;
+}
+
+// Download description page 2 and 3
+.downloadDesc {
+  background-color: black;
+  height: 85vh;
+  padding-top: 240px;
+
+  a {
+    text-decoration: none;
+    color: $link-hover;
+
+    &:hover {
+      color: $table-item-color;
+    }
+  }
+
+  button {
+    border: 2px solid white;
+    margin-right: 10px;
+  }
+}
+
+// Media Query
+@media (max-width: 510px) {
+  .downloadDesc {
+    button {
+      margin: 10px 0px;
+    }
+  }
+}
+
+@media (max-width: 405px) {
+  .navBarPc {
+    width: 180px;
+    margin-top: 15px;
+  }
+
+  .footer {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .navBarPc {
+    width: 150px;
+    margin-top: 15px;
+  }
+} ;
